@@ -1,0 +1,54 @@
+.container {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: lightgray;
+  padding: 0 10px 10px 10px;
+  margin: 0 auto;
+}
+
+header {
+  width: 90%;
+  margin: 0 auto;
+  background-color: lightcoral;
+  margin-bottom: 10px;
+  padding: 20px;
+  color: white;
+}
+.mission,
+.vission {
+  width: 100%;
+  background-color: white;
+  padding: 10px;
+  text-align: center;
+  margin-top: 10px;
+}
+h2 {
+  background-color: lightcoral;
+  display: inline-block;
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+/* tablet */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .container,
+  header {
+    width: 80%;
+  }
+}
+
+/* desktop */
+@media only screen and (min-width: 992px) {
+  .container,
+  header {
+    width: 60%;
+  }
+  .mission,
+  .vission {
+    width: 49%;
+    padding: 10px;
+    text-align: center;
+  }
+}

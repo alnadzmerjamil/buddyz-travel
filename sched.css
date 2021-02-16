@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header {
+  width: 95%;
+  margin: 0 auto;
+  background-color: lightcoral;
+  margin-bottom: 10px;
+  padding: 20px;
+  color: white;
+}
+.main-schedule {
+  width: 95%;
+  background-color: red;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+.schedules {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: lightcoral;
+  justify-content: space-between;
+  text-align: left;
+  font-size: 1.7vw;
+  padding: 10px;
+}
+
+.row1 {
+  background-color: darkgrey;
+}
+
+.time {
+  width: 10%;
+  /* background-color: violet; */
+}
+.origin {
+  width: 20%;
+  /* background-color: green; */
+}
+.destination {
+  width: 25%;
+  /* background-color: blue; */
+}
+.date,
+.Shipping-line,
+.price {
+  /* background-color: red; */
+  width: calc(40% / 3);
+  width: 15%;
+}
+.odd {
+  background-color: lightgrey;
+}
+.odd:hover {
+  background-color: white;
+}
+.even {
+  background-color: darkgray;
+}
+.even:hover {
+  background-color: white;
+}
+/* tablet */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .main-schedule,
+  header {
+    width: 85%;
+  }
+  .row {
+    font-size: 1.3vw;
+  }
+}
+/* desktop */
+@media only screen and (min-width: 992px) {
+  .main-schedule,
+  header {
+    width: 80%;
+  }
+  .row {
+    font-size: 1vw;
+  }
+}

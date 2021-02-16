@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  width: 80%;
+  margin: 0 auto;
+  background-color: lightcoral;
+  margin-bottom: 10px;
+  padding: 20px;
+  color: white;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 80%;
+  padding: 20px;
+  background-color: lightgray;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.ship-name {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.class-a,
+.class-b,
+.class-c {
+  width: 100%;
+  text-align: center;
+}
+.figureclass-a,
+.figureclass-b,
+.figureclass-c {
+  width: 100%;
+  padding: 10px;
+  background-color: white;
+  margin-bottom: 10px;
+}
+.imgclass-a,
+.imgclass-b,
+.imgclass-c {
+  width: 100%;
+}
+
+/* tablet */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .class-b {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    order: 1;
+  }
+  .figureclass-b {
+    width: 49%;
+  }
+
+  .class-a,
+  .class-c {
+    width: 49%;
+  }
+  .figureclass-c,
+  .figureclass-a {
+    width: 100%;
+  }
+}
+/* desktop */
+@media only screen and (min-width: 992px) {
+  .gallery {
+    justify-content: space-between;
+  }
+  .class-a {
+    width: 61%;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .class-b {
+    width: 37%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .figureclass-b {
+    padding: 15px 15px 10px 15px;
+  }
+  .class-c {
+    width: 32%;
+  }
+}

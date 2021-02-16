@@ -1,0 +1,325 @@
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+  min-height: 100vh;
+}
+a {
+  text-decoration: none;
+  color: blue;
+}
+.nav-container {
+  padding: 10px;
+}
+.account {
+  float: right;
+  text-align: center;
+  margin-left: 10px;
+  background-color: darkgray;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  border-radius: 50px;
+  border: 2px solid black;
+}
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.buddyz {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  width: 60%;
+  color: blue;
+  box-shadow: 0px 5px 5px rosybrown;
+  padding: 15px;
+  cursor: pointer;
+}
+.buddyz-text {
+  margin-right: 10px;
+  border-top: 3px solid rgb(255, 81, 0);
+  font-size: 4vw;
+}
+.travel-text {
+  color: rgb(255, 81, 0);
+  font-weight: bolder;
+  font-size: 4vw;
+}
+.bars {
+  width: 30px;
+  height: 30px;
+  background-color: lightcoral;
+  border: 2px solid black;
+  border-radius: 5px;
+  text-align: center;
+  padding: 5px;
+}
+.more {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  text-align: right;
+  align-items: center;
+  width: 100%;
+  color: blue;
+  padding: 5px;
+  line-height: 40px;
+  /* border: 1px solid black; */
+}
+.morechild {
+  width: 100%;
+}
+.hovered:hover {
+  border-bottom: 2px solid lightcoral;
+}
+
+.main-home {
+  position: relative;
+  width: 85%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0 auto;
+}
+.red {
+  background-color: lightcoral;
+  width: 85%;
+  order: -1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  padding: 2px;
+  color: white;
+  font-size: 2.5vw;
+}
+.todays-heading {
+  width: 100%;
+  margin-bottom: 2px;
+}
+
+.todays-travel {
+  display: flex;
+  flex-wrap: wrap;
+  width: 33%;
+  padding: 2px;
+  text-align: center;
+}
+.todays-travel1,
+.todays-travel2 {
+  border-right: 1px solid darkgray;
+}
+
+.img-ship,
+.todays-fig {
+  width: 100%;
+}
+
+.blue {
+  width: 85%;
+  margin: 0 auto;
+}
+.book {
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 20px;
+  /* padding: 20px; */
+  /* background-color: red; */
+  text-align: right;
+}
+.book-button {
+  padding: 10px;
+  font-weight: bolder;
+  font-size: 3vw;
+  border-radius: 10px;
+  background-color: lightblue;
+  border: 1px solid blue;
+  cursor: pointer;
+}
+.book-button:hover {
+  background-color: lightcoral;
+  color: blue;
+}
+.main-footer {
+  position: relative;
+  bottom: -390px;
+}
+.footer-container {
+  width: 100%;
+  background-color: lightgrey;
+  padding: 20px;
+  text-align: center;
+}
+.fb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: darkblue;
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.fb-text {
+  font-size: 30px;
+  font-weight: bold;
+}
+/* tablet */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .buddyz {
+    width: 40%;
+  }
+  .morechild {
+    width: 50%;
+  }
+  .more {
+    justify-content: flex-start;
+    text-align: left;
+  }
+  .red {
+    font-size: 1.5vw;
+  }
+  .todays-travel {
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: left;
+    justify-content: space-between;
+  }
+  .img-ship {
+    width: 35%;
+  }
+
+  .todays-fig {
+    width: 64%;
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+  }
+
+  .visit,
+  .title,
+  .contact {
+    width: 30%;
+    font-size: 1.5vw;
+  }
+  .book-button {
+    font-size: 1.7vw;
+  }
+}
+/* desktop */
+@media only screen and (min-width: 992px) {
+  .buddyz {
+    width: 25%;
+    /* border: 1px solid black; */
+  }
+  .buddyz-text {
+    margin-right: 10px;
+    border-top: 3px solid rgb(255, 81, 0);
+    font-size: 2vw;
+  }
+  .travel-text {
+    color: rgb(255, 81, 0);
+    font-weight: bolder;
+    font-size: 2vw;
+  }
+  .bars {
+    position: absolute;
+    display: none;
+  }
+  .morechild {
+    width: 18%;
+    /* border: 1px solid black; */
+  }
+  .schedule,
+  .about {
+    width: 12%;
+    /* border: 1px solid black; */
+  }
+
+  .more {
+    width: 75%;
+    justify-content: space-evenly;
+    /* border: 1px solid black; */
+    align-items: flex-end;
+    border-right: 3px solid rgb(255, 81, 0);
+  }
+  .main-nav {
+    align-items: stretch;
+  }
+  /* for main body*/
+  .main-home {
+    display: block;
+    width: 85%;
+    margin: 0 auto;
+  }
+  .red {
+    width: 20%;
+    float: left;
+    background-color: white;
+    font-size: 1vw;
+    color: black;
+  }
+
+  .todays-heading {
+    margin-bottom: 10px;
+  }
+
+  .blue {
+    width: 79%;
+    border-left: 3px solid lightcoral;
+    color: whitesmoke;
+    text-align: center;
+    vertical-align: middle;
+    float: right;
+
+    padding-left: 20px;
+  }
+  .book {
+    width: 20%;
+    float: left;
+    clear: left;
+    text-align: center;
+  }
+  .book-button {
+    font-size: 1.5vw;
+  }
+
+  .todays-travel {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    border-bottom: 1px solid darkgray;
+  }
+  .img-ship {
+    width: 30%;
+    /* border: 1px solid black; */
+  }
+  .todays-fig {
+    width: 65%;
+    text-align: left;
+    /* border: 1px solid black; */
+  }
+
+  /* .visit, 
+  .title,
+  .contact {
+    width: 33.3%;
+    font-size: 1.2vw;
+  }*/
+}

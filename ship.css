@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+  width: 80%;
+  margin: 0 auto;
+  background-color: lightcoral;
+  margin-bottom: 10px;
+  padding: 20px;
+  color: white;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+  background-color: lightgray;
+  padding: 10px;
+}
+.row1 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: lightgray;
+}
+.image-container {
+  width: 49%;
+  background-color: white;
+  padding: 10px;
+  margin-top: 20px;
+}
+.ship-name {
+  margin-bottom: 10px;
+}
+
+.img-shipline {
+  width: 100%;
+  /* border: 1px solid red; */
+}
+.son {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  /* padding: 5px; */
+  /* background-color: red; */
+}
+.img-son {
+  width: 32.7%;
+}
+/* tablet */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .image-container {
+    width: 32.5%;
+  }
+  .first-49,
+  .second-49 {
+    width: 49%;
+  }
+  .img-shipline,
+  .ship-name {
+    width: 100%;
+    /* border: 1px solid red; */
+  }
+}
+/* desktop */
+@media only screen and (min-width: 992px) {
+  .container {
+    width: 80%;
+  }
+  .image-container {
+    width: 32.5%;
+    /* width: calc(100% / 3); */
+  }
+  .first-49,
+  .second-49 {
+    width: 49%;
+  }
+  .img-shipline {
+    width: 100%;
+  }
+}
