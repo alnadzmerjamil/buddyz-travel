@@ -7,14 +7,16 @@
 header {
   width: 95%;
   margin: 0 auto;
-  background-color: lightcoral;
-  margin-bottom: 10px;
-  padding: 20px;
+  margin-top: 20px;
+  padding: 10px;
   color: white;
+  background-color: lightsteelblue;
+}
+h2 {
+  font-size: 12px;
 }
 .main-schedule {
   width: 95%;
-  background-color: red;
   margin: 0 auto;
   margin-bottom: 100px;
 }
@@ -27,7 +29,6 @@ header {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  background-color: lightcoral;
   justify-content: space-between;
   text-align: left;
   font-size: 1.7vw;
@@ -35,7 +36,8 @@ header {
 }
 
 .row1 {
-  background-color: darkgrey;
+  background-color: whitesmoke;
+  border-bottom: 1px solid gray;
 }
 
 .time {
@@ -53,21 +55,22 @@ header {
 .date,
 .Shipping-line,
 .price {
-  /* background-color: red; */
   width: calc(40% / 3);
   width: 15%;
 }
 .odd {
-  background-color: lightgrey;
+  border-bottom: 1px solid gray;
+  background-color: whitesmoke;
 }
 .odd:hover {
-  background-color: white;
+  background-color: lightgray;
 }
 .even {
-  background-color: darkgray;
+  border-bottom: 1px solid gray;
+  background-color: whitesmoke;
 }
 .even:hover {
-  background-color: white;
+  background-color: lightgray;
 }
 /* tablet */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -84,6 +87,12 @@ header {
   .main-schedule,
   header {
     width: 80%;
+  }
+  header {
+    margin-top: 50px;
+  }
+  h2 {
+    font-size: 25px;
   }
   .row {
     font-size: 1vw;

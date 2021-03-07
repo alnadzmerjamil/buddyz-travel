@@ -8,15 +8,16 @@
 header {
   width: 80%;
   margin: 0 auto;
-  background-color: lightcoral;
-  margin-bottom: 10px;
-  padding: 20px;
+  background-color: lightsteelblue;
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 10px;
   color: white;
 }
 .container {
   width: 80%;
   margin: 0 auto;
-  background-color: lightgray;
+  background-color: whitesmoke;
   padding: 10px;
 }
 .row1 {
@@ -24,7 +25,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  background-color: lightgray;
+  background-color: whitesmoke;
 }
 .image-container {
   width: 49%;
@@ -34,22 +35,34 @@ header {
 }
 .ship-name {
   margin-bottom: 10px;
+  font-size: 12px;
+  color: lightskyblue;
 }
 
 .img-shipline {
   width: 100%;
   /* border: 1px solid red; */
 }
+.img-shipline:hover {
+  transition-delay: 0.1s;
+  transition-duration: 0.7s;
+  transform: scale(0.99);
+  opacity: 0.5;
+}
 .son {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
-  /* padding: 5px; */
-  /* background-color: red; */
+  overflow: hidden;
 }
 .img-son {
   width: 32.7%;
+}
+.img-son:hover {
+  transform: scale(1.5);
+  transition-delay: 0.1s;
+  transition-duration: 0.7s;
 }
 /* tablet */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -70,6 +83,13 @@ header {
 @media only screen and (min-width: 992px) {
   .container {
     width: 80%;
+  }
+  header {
+    font-size: 15px;
+    margin-top: 50px;
+  }
+  .ship-name {
+    font-size: 20px;
   }
   .image-container {
     width: 32.5%;

@@ -3,7 +3,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  background-color: lightgray;
+  background-color: whitesmoke;
   padding: 0 10px 10px 10px;
   margin: 0 auto;
 }
@@ -11,9 +11,9 @@
 header {
   width: 90%;
   margin: 0 auto;
-  background-color: lightcoral;
-  margin-bottom: 10px;
-  padding: 20px;
+  background-color: lightsteelblue;
+  margin-top: 20px;
+  padding: 10px;
   color: white;
 }
 .mission,
@@ -24,12 +24,16 @@ header {
   text-align: center;
   margin-top: 10px;
 }
+.missvis {
+  font-size: 15px;
+}
+.paragraph {
+  font-size: 12px;
+}
 h2 {
-  background-color: lightcoral;
   display: inline-block;
-  padding: 5px;
   border-radius: 5px;
-  margin-bottom: 10px;
+  font-size: 15px;
 }
 /* tablet */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -41,14 +45,29 @@ h2 {
 
 /* desktop */
 @media only screen and (min-width: 992px) {
-  .container,
+  .container {
+    width: 60%;
+  }
   header {
     width: 60%;
+    font-size: 15px;
+    margin-top: 50px;
   }
   .mission,
   .vission {
     width: 49%;
     padding: 10px;
     text-align: center;
+  }
+  .missvis {
+    font-size: 20px;
+  }
+  .paragraph {
+    font-size: 15px;
+  }
+  h2 {
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 20px;
   }
 }
